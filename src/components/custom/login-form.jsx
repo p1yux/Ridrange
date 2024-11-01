@@ -1,4 +1,5 @@
 import Link from "next/link"
+import loginimg from "../../assets/images/loginimg.jpg"
 export default function Login() {
     return (
       <>
@@ -26,16 +27,15 @@ export default function Login() {
                 <div>
                   <form action="#" method="POST" className="space-y-6">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                        Email address
+                      <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
+                        Username
                       </label>
                       <div className="mt-2">
                         <input
-                          id="email"
-                          name="email"
-                          type="email"
+                          id="username"
+                          name="username"
+                          type="text"
                           required
-                          autoComplete="email"
                           className="block w-full rounded-md border-0 p-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
                       </div>
@@ -144,8 +144,8 @@ export default function Login() {
           </div>
           <div className="relative hidden w-0 flex-1 lg:block">
             <img
-              alt=""
-              src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
+              alt="Login Image"
+              src={loginimg}
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>

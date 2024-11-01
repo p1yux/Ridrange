@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -372,7 +373,7 @@ export default function LandingPage() {
                   clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                   transform="translate(24 24)"
                 >
-                  <img alt="" src="https://tailwindui.com/plus/img/component-images/mobile-app-screenshot.png" />
+                  <Image alt="mobile screenshot" src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-400.svg" width={10} height={10} />
                 </foreignObject>
               </svg>
             </div>
